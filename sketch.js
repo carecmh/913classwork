@@ -42,6 +42,7 @@ function mouseClicked() {
     shouldMove = true;
     gray = random(255);
   }
-
 }
-
+function keyPressed(){
+  console.log("a key was pressed");
+}
