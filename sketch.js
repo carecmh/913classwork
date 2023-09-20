@@ -44,5 +44,6 @@ function mouseClicked() {
   }
 }
 function keyPressed(){
+  if (key == 'j' || key == "J")
   console.log("a key was pressed");
 }
