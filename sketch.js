@@ -3,6 +3,7 @@ let ballspeed = 4;
 let rectx = 0;
 let diameter = 40;
 let shouldMove = true;
+let gray = 120
 
 function setup() {
   createCanvas(400, 400);
@@ -18,6 +19,7 @@ function draw() {
   if(shouldMove){
     ballx = ballx + ballspeed;
   }
+  fill(gray);
   ellipse(ballx, height/2, 30)
   
   rectx = rectx +1
@@ -25,6 +27,12 @@ function draw() {
 }
 
 function mouseClicked() {
-shouldMove = ! shouldMove
+  if(shouldMove) {
+    shouldMove = false;
+  } else {
+    shouldMove = true;
+    gray = random(255);
+  }
+
 }
 
