@@ -44,6 +44,10 @@ function mouseClicked() {
   }
 }
 function keyPressed(){
-  if (key == 'j' || key == "J")
-  console.log("a key was pressed");
+  if (key == 'j' || key == "J") {
+  if (ballspeed < 0);
+  console.log("Going left!")
+  } else {
+    console.log("Going right!")
+  }
 }
