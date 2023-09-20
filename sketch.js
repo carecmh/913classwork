@@ -12,7 +12,12 @@ function setup() {
 }
 
 function draw() {
-  background(123);
+  if (millis() > 10000) {
+    background(275,13,75)
+  } else {
+  background(255,125,0);
+  }
+  
   if (ballx > width || ballx < 0) {
     ballspeed = ballspeed * -1;
   }
