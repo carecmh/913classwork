@@ -19,6 +19,10 @@ function draw() {
 }
 
 function mousePressed() {
-  noLoop()
+  noLoop();
+}
+
+function mouseReleased() {
+  loop();
 }
 
